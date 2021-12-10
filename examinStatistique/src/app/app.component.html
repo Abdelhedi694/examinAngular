@@ -1,2 +1,3 @@
 <h1>Statistiques</h1>
-<app-affiche-une-statistique *ngFor="let uneStat of tabStat" [stat]="uneStat"></app-affiche-une-statistique>
+<app-affiche-une-statistique *ngFor="let uneStat of tabStat" [stat]="uneStat" (supp)="supprimer(uneStat)">
+</app-affiche-une-statistique>

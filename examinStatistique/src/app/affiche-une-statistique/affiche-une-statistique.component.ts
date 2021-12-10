@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Statistique } from '../models/statistique';
+import { StatistiqueService } from '../services/statistique.service';
 
 @Component({
   selector: 'app-affiche-une-statistique',
@@ -8,7 +9,13 @@ import { Statistique } from '../models/statistique';
 })
 export class AfficheUneStatistiqueComponent implements OnInit {
   @Input() public stat!: Statistique;
-  constructor() {}
+  @Output() public supp = new EventEmitter();
+  tabStat: Statistique[] = [];
+  constructor(public tab: StatistiqueService) {}
+
+  reagirAuBouton() {
+    this.supp.emit();
+  }
 
   ngOnInit(): void {}
 }

@@ -13,4 +13,9 @@ export class AppComponent {
   constructor(public tabServ: StatistiqueService) {
     this.tabStat = tabServ.tableauStatistique;
   }
+
+  supprimer(maStat: Statistique) {
+    let index = this.tabStat.indexOf(maStat);
+    this.tabStat.splice(index, 1);
+  }
 }
