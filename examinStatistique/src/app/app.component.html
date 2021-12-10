@@ -1,5 +1,4 @@
-<ul>
-  <h1>Titres Statistiques</h1>
-  <li>{{covidFrance.titre}}</li>
-  <li>{{covidDecesFrance.titre}}</li>
-</ul>
+<h1>Statistiques</h1>
+<app-affiche-une-statistique [stat]="covidFrance"></app-affiche-une-statistique>
+<hr>
+<app-affiche-une-statistique [stat]="covidDecesFrance"></app-affiche-une-statistique>
