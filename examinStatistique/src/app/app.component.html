@@ -1,4 +1,2 @@
 <h1>Statistiques</h1>
-<app-affiche-une-statistique [stat]="covidFrance"></app-affiche-une-statistique>
-<hr>
-<app-affiche-une-statistique [stat]="covidDecesFrance"></app-affiche-une-statistique>
+<app-affiche-une-statistique *ngFor="let uneStat of tabStat" [stat]="uneStat"></app-affiche-une-statistique>

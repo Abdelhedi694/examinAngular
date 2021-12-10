@@ -17,4 +17,17 @@ export class AppComponent {
     'Décès covid France',
     '120 000'
   );
+
+  tabStat: Statistique[] = [this.covidFrance, this.covidDecesFrance];
+
+  constructor() {
+    setTimeout(() => {
+      let informatique = new Statistique(
+        'sjfbkjvbhlksd541611',
+        'informaticiens dans le monde',
+        '200 millions'
+      );
+      this.tabStat.push(informatique);
+    }, 3000);
+  }
 }
