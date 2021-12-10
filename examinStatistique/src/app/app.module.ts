@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AfficheUneStatistiqueComponent } from './affiche-une-statistique/affiche-une-statistique.component';
@@ -12,13 +12,10 @@ import { CreationStatistiqueComponent } from './creation-statistique/creation-st
     AppComponent,
     AfficheUneStatistiqueComponent,
     AffichageStatistiquesComponent,
-    CreationStatistiqueComponent
+    CreationStatistiqueComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

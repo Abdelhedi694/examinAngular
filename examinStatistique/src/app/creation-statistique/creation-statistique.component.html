@@ -1,1 +1,6 @@
-<p>creation-statistique works!</p>
+<form (ngSubmit)="soumissionForm()" #monformulaire="ngForm">
+    <input type="text" placeholder="identifiant de la statistique" name="id" [(ngModel)]="id">
+    <input type="text" placeholder="titre de la statistique" name="titre" [(ngModel)]="titre">
+    <input type="text" placeholder="valeur de la statistique" name="valeur" [(ngModel)]="valeur">
+    <input type="submit" value="soumettre">
+</form>
