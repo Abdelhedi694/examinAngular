@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AfficheUneStatistiqueComponent } from './affiche-une-statistique/affiche-une-statistique.component';
 import { AffichageStatistiquesComponent } from './affichage-statistiques/affichage-statistiques.component';
 import { CreationStatistiqueComponent } from './creation-statistique/creation-statistique.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +14,7 @@ import { CreationStatistiqueComponent } from './creation-statistique/creation-st
     AffichageStatistiquesComponent,
     CreationStatistiqueComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
