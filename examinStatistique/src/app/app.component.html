@@ -1,3 +1,4 @@
-<h1>Statistiques</h1>
-<app-affiche-une-statistique *ngFor="let uneStat of tabStat" [stat]="uneStat" (supp)="supprimer(uneStat)">
-</app-affiche-une-statistique>
+<nav>
+  <a routerLink="/affichageStat" routerLinkActive="active">Page affichage statistiques</a>
+  <a routerLink="/creationStat" routerLinkActive="active">Page création statistiques</a>
+</nav>

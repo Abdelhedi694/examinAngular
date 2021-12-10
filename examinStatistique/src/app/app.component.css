@@ -1,0 +1,12 @@
+nav {
+  height: 150px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
